@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: #363636;
+}
+
+div#interface {
+    height: 1280px;
+}
+
+/* Edição Menu */
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    font-family: arial;
+    
+    
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 185px;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+    z-index: 2;
+    transition: all;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+    
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+    
+}
+
+.menu ul ul li a {
+    background-color: #B8860B;
+    
+}
+
+
+.brasil{
+    position: relative;
+    padding-top: 10px;
+    padding-left: 530px;
+    height: 30px;
+}
+
+.logo {
+    width: 320px;
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 10px;
+    z-index: 0;
+}
+
+header#cabecalho {
+    border-bottom: 1px solid white;
+    box-shadow: 0,0,0,1.0;
+}
+
+/*Galeria topo site */
+
+.foto:nth-child(1) {
+        
+}
+.foto:nth-child(2) {
+    animation-delay: 5s;
+}
+.foto:nth-child(3) {
+    animation-delay: 10s;
+}
+.foto:nth-child(4) {
+    animation-delay: 15s;
+}
+
+
+.galeria {
+    padding-top: 76px;
+    padding-left: 390px;
+    margin: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.foto {
+    width: 900px;
+    opacity: 0%;
+    position: absolute;
+    animation: animacao 20s infinite;
+    z-index: 0;
+    
+}
+
+@keyframes animacao{
+    25% {
+        opacity: 1;
+        transform:scale(1.1,1.1);
+    }
+
+    50% {
+        opacity: 0;
+
+    }
+}
+
+/* Corpo do site */
+
+.divisor {
+    padding-top: 550px;
+    padding-left: 500px;
+}
+
+img#paper {
+    width: 1349px;
+    position: absolute;
+    padding-top: 45px;
+}
+
+section#apresentacao h1 {
+    color: white;
+    font-size: 45px;
+    position: relative;
+    padding-top: 75px;
+    padding-left: 20px;
+}
+
+section#apresentacao h2 {
+    color: white;
+    font-size: 25px;
+    position: relative;
+    padding-top: 2px;
+    padding-left: 20px;
+}
+
+section#apresentacao p {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    padding-top: 45px;
+    padding-left: 20px;
+}
+
+section#corpo h1 {
+    color: white;
+    font-size: 45px;
+    position: relative;
+    padding-top: 450px;
+    text-align: center;
+
+}
+
+section#corpo h2 {
+    color: white;
+    font-size: 25px;
+    position: relative;
+    padding-top: 4px;
+    text-align: center;
+}
+
+img#tabela {
+    margin-top: 72px;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 1;
+
+}
+
+iframe#bebida-spec {
+    position: relative;
+    width: 680px;
+    height: 420px;
+    margin-top: 50px;
+    padding-left: 660px;
+    z-index: 0;
+    border: none;
+    overflow: hidden;
+}
+
+footer#rodape{
+    margin-top: -3px;
+    text-align: center;
+    background-color: #1C1C1C ;
+}
+
+footer#rodape p{
+    color: white;
+}
